@@ -1,0 +1,57 @@
+
+.main-container{
+    font-family: "Poppins", sans-serif;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+
+}
+.event-name__container{
+    /* margin: 0.4rem 0; */
+    border: 1px solid black;
+}
+.event-date__container{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 0.2rem auto;
+    border-radius: 1rem;
+    /* flex-direction: column; */
+    padding: 0.5rem;
+    border: 1px solid red;
+ 
+}
+.event-date__date{
+    font-size: 2rem;
+    width: 30%;
+   
+}
+.event-date__month{
+    margin-left: -0.3rem;
+    margin-right: 0.3rem;
+    font-size: 2rem;
+    width: 60%;
+    text-align: right;
+}
+.event-date__day{
+    text-align: center;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+.event-date__year{
+    text-align: center;
+    width: 100%;
+}
+.event-time__container{
+    border: 1px solid black;
+    /* margin-top: 1rem; */
+    grid-column: 1/3;
+    text-align: center;
+}
+p , h4{
+    padding: 0;
+    margin: 0;
+}
