@@ -1,32 +1,19 @@
-import './Events.css'
+import "./Events.css";
+import EventsDate from "./EventsDate";
+export default function Event(props) {
+  return (
+    <div className="main-container">
+      <EventsDate date={props.date}/>
+      {/* Location and Name */}
+      <div className="event-name__container">
+        <p className="event-name__title">{props.name}</p>
+        <p className="event-name__location">{props.loc}</p>
+      </div>
 
-export default function Event(props){
-    // const month = props.date.toLocaleString('en-US', { month: 'long' });
-    //const day = props.date.toLocaleDateString(locale, {weekday: 'long'})
-    // const date = props.date.getDate() + 'th';
-    // const year = props.date.getFullYear();
-
-    // const from = props.time.from;
-    // const to = props.time.to;
-
-
-    return(
-    <div className='main-container'>
-        {/* Location and Name */}
-        <div className='event-name__container'>
-            <p>Hiking</p>
-            <p>Entoto Park</p>
-        </div>
-        {/* Date and Year Stuf Div */}
-        <div className='event-date__container'>
-            <div className='event-date__month'>Jan</div>
-            <div className='event-date__date'>07</div>
-            <div className='event-date__day'>Sunday</div>
-            <div className='event-date__year'>2024</div>
-        </div>
-
-        {/* Time div */}
-        <div className='event-time__container'><p>From 8pm to 10pm</p></div>
+      {/* Time div */}
+      <div className="event-time__container">
+        <p>From <span>{props.time.from}</span> to <span>{props.time.to}</span> </p>
+      </div>
     </div>
-    )
+  );
 }

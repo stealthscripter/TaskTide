@@ -1,0 +1,32 @@
+.event-date__container{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 0.2rem 1rem;
+    border-radius: 1rem;
+    /* flex-direction: column; */
+    padding: 0.4rem;
+    border: 1px solid rgb(0, 0, 0);
+ 
+}
+.event-date__date{
+    font-size: 2rem;
+    width: 30%;
+   
+}
+.event-date__month{
+    margin-left: -0.3rem;
+    margin-right: 0.3rem;
+    font-size: 2rem;
+    width: 60%;
+    text-align: right;
+}
+.event-date__day{
+    text-align: center;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+.event-date__year{
+    text-align: center;
+    width: 100%;
+}

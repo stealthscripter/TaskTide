@@ -10,40 +10,16 @@
 
 }
 .event-name__container{
-    /* margin: 0.4rem 0; */
+    padding: 0.4rem;
+    margin: 0.6rem;
     border: 1px solid black;
 }
-.event-date__container{
-    display: flex;
-    width: 60%;
-    flex-wrap: wrap;
-    margin: 0.2rem auto;
-    border-radius: 1rem;
-    /* flex-direction: column; */
-    padding: 0.5rem;
-    border: 1px solid red;
- 
+.event-name__title{
+
+    font-size: 1.8rem;
 }
-.event-date__date{
-    font-size: 2rem;
-    width: 30%;
-   
-}
-.event-date__month{
-    margin-left: -0.3rem;
-    margin-right: 0.3rem;
-    font-size: 2rem;
-    width: 60%;
-    text-align: right;
-}
-.event-date__day{
-    text-align: center;
-    width: 100%;
-    margin-top: 0.2rem;
-}
-.event-date__year{
-    text-align: center;
-    width: 100%;
+.event-name__location{
+    font-size: 1rem;
 }
 .event-time__container{
     border: 1px solid black;
