@@ -1,0 +1,16 @@
+.form-container{
+    margin: 1rem auto;
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-form__name{
+    width: 50%;
+}
+label{
+    margin: 0.5rem;
+}
+.event-form__loc{
+    width: 50%;
+}

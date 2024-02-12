@@ -6,9 +6,14 @@ export default function EventsDate(props) {
   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var d = new Date(props.date);
   var dayName = days[d.getDay()];
-  const date = props.date.getDate();
+  let date = props.date.getDate() + '';
   const year = props.date.getFullYear();
 
+  if(date.length < 2){
+      date = '0' + props.date.getDate();
+  }
+
+  console.log(typeof(date))
   return (
     <div>
       {/* Date and Year Stuf Div */}

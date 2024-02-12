@@ -1,6 +1,7 @@
 import "./App.css";
-import Event from "./Components/Events";
-const EventsList = [
+import EventsList from "./Components/UI/EventsList";
+import EventsForm from "./Components/Form/EventsForm";
+const EventsDatas = [
   {
     id: Math.random(),
     name: "CakeBaking",
@@ -34,6 +35,8 @@ function App() {
   return (
     <div>
       <h2>Event Tracker</h2>
+      <EventsForm/>
+      <EventsList EventObj = {EventsDatas} />
     </div>
   );
 }

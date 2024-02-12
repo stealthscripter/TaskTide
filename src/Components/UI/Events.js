@@ -12,7 +12,7 @@ export default function Event(props) {
 
       {/* Time div */}
       <div className="event-time__container">
-        <p>From <span>{props.time.from}</span> to <span>{props.time.to}</span> </p>
+        <p>From <span>{props.from}</span> to <span>{props.to}</span> </p>
       </div>
     </div>
   );
